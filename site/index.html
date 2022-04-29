@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="jquery.txt"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img class="logotipchik" src="images/new_logo.png">
+        </div>
+        <nav class="primary-navigation">
+          <ul>
+            <li id="navv"><a href="#">Главная страница</a></li>
+            <li id="navv" class="nav-button">Категории &dtrif;
+              <ul class="dropdown">
+                <li class="dropdownli"><a1 href="#">Кафе</a1></li>
+                <li class="dropdownli"><a2 href="#">Выставки/Музеи</a2></li>
+                <li class="dropdownli"><a3 href="#">Парки</a3></li>
+                <li id="a4"class="dropdownli"><a4 href="#">Активный отдых</a4></li>
+              </ul>
+            </li>
+            <li id="navv"><a href="#">Тест</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li id="menu"><a href="#">Главная</a></li>
+            <li id="menu" class="menu-button">Категории &dtrif;
+              <ul class="dropdown_menu">
+                <li class="dropdownli_menu"><a5 href="#">Кафе</a5></li>
+                <li class="dropdownli_menu"><a6 href="#">Выставки/Музеи</a6></li>
+                <li class="dropdownli_menu"><a7 href="#">Парки</a7></li>
+                <li class="dropdownli_menu"><a8 href="#">Активный отдых</a8></li>
+              </ul>
+            </li>
+            <li id="navv"><a href="#">Тест</a></li>
+        </ul>
+      </nav>
+            <li id="menu" class="menu_test"><a href="#">Тест</a></li>
+            <div class="logo_b">
+              <img class="logo_burger" src="images/new.png">
+            </div>
+          </ul>
+        </div>
+      </header>
+      <div class="rectangle">
+          <div class="inf-down">Не можете решить, куда пойти?</div>
+          <div class="inf-under"> ПРОЙДИТЕ ТЕСТ И УЗНАЙТЕ,ЧЕГО ЖЕЛАЕТ ВАША ДУША</div>
+          <div class="strelka"></div>
+      </div>
+      <div class="rectangle">
+        <div class="number">Вопрос №1</div>
+        <div class="inf2">Итак, для начала узнаем, что бы вы хотели</div>
+        <div class="quiz">
+          <div class="quiz-column">
+              <div class="quest">
+                <label class="custom-radio" > 
+                  <input type="radio" name="q1" onClick="saver(1,0)">
+                 <span>Хочу просто посидеть в мягком кресле и выпить чашечку кофе</span>
+                </label>
+              </div>
+          <div class="quest">
+            <label class="custom-radio" > 
+              <input type="radio" name="q1" onClick="saver(1,2)">
+              <span>Я бы хотел(-а) побыть подальше от суеты</span>
+            </label>
+          </div>
+          <div class="quest">
+            <label class="custom-radio" > 
+              <input type="radio" name="q1" onClick="saver(1,3)">
+              <span>Я готов(-а) свернуть горы</span>
+            </label>
+          </div>
+      </div>
+      
+      <div class="quiz-column">
+        <div class="quest">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(1,1)">
+            <span>Активный отдых – это, конечно, хорошо, но душа просит культурных развлечений</span>
+          </label>
+        </div>
+      <div class="quest">
+        <label class="custom-radio" > 
+          <input type="radio" name="q1" onClick="saver(1,2)">
+           <span>Хотел(-а) бы проветриться</span>
+          </label>
+      </div>
+      <div class="quest">
+        <label class="custom-radio" > 
+          <input type="radio" name="q1" onClick="saver(1,0)">
+         <span>Хочу заполнить свой желудок вкусной едой</span>
+        </label>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="rectangle2">
+      <div class="number">Вопрос №2</div>
+      <div class="inf1">Какой ты сегодня?</div>
+      <div class="quiz">
+        <div class="quiz-column">
+            <div class="quest1">
+              <label class="custom-radio" > 
+                <input type="radio" name="q1"onClick="saver(2,2)" >
+                <span>Романтичный </span>
+              </label>
+            </div>
+        <div class="quest1">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(2,1)">
+            <span>Спокойный</span>
+          </label>
+        </div>
+        <div class="quest1">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(2,0)">
+           <span> Веселый</span>
+          </label>
+        </div>
+    </div>
+    
+    <div class="quiz-column">
+      <div class="quest1">
+        <label class="custom-radio" > 
+          <input type="radio" name="q1" onClick="saver(2,3)">
+          <span>Растроенный</span>
+        </label>
+      </div>
+    <div class="quest1">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(2,3)">
+         <span> Злой</span>
+        </label>
+    </div>
+    <div class="quest1">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(2,2)">
+      <span> Печальный</span>
+      </label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="rectangle2">
+      <div class="number">Вопрос №3</div>
+      <div class="inf2">Вам предложили сходить на выставку. Вы бы пошли?</div>
+      <div class="quiz">
+        <div class="quiz-column">
+            <div class="quest">
+              <label class="custom-radio" > 
+                <input type="radio" name="q1" onClick="saver(3,1)">
+               <span> Само собой!</span>
+              </label>
+            </div>
+        <div class="quest">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(3,3)">
+            <span>Неет, скукотища какая-то</span>
+          </label>
+        </div>
+        <div class="quest">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(3,2)">
+            <span>Сначала узнаю про выставку и решу</span>
+          </label>
+        </div>
+    </div>
+    
+    <div class="quiz-column">
+      <div class="quest">
+        <label class="custom-radio" > 
+          <input type="radio" name="q1" onClick="saver(3,0)">
+          <span>Если это недалеко от моего дома, то пойду</span>
+        </label>
+      </div>
+    <div class="quest">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(3,2)">
+         <span> Если выставка зарубежная, то было бы интересно посетить</span>
+        </label>
+    </div>
+    <div class="quest">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(3,3)">
+       <span> Пойду только с друзьями</span>
+      </label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="rectangle2">
+      <div class="number">Вопрос №4</div>
+      <div class="inf1">Что вам больше по душе?</div>
+      <div class="quiz">
+        <div class="quiz-column">
+            <div class="quest2">
+              <label class="custom-radio" > 
+                <input type="radio" name="q1" onClick="saver(4,3)">
+               <span>Активный отдых</span>
+              </label>
+            </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(4,1)">
+          <span> Спокойный отдых</span>
+          </label>
+        </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(4,1)">
+           <span> Культурное просвещение</span>
+          </label>
+        </div>
+    </div>
+    
+    <div class="quiz-column">
+      <div class="quest2">
+        <label class="custom-radio" > 
+          <input type="radio" name="q1" onClick="saver(4,0)">
+        <span> Мне по душе просто покушать</span>
+        </label>
+      </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(4,2)">
+        <span> Единение с природой</span>
+        </label>
+    </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(4,3)">
+      <span> Повеселиться с друзьями</span>
+      </label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="rectangle2">
+      <div class="number">Вопрос №5</div>
+      <div class="inf1">Как вы предпочитаете провести вечер?</div>
+      <div class="quiz">
+        <div class="quiz-column">
+            <div class="quest2">
+              <label class="custom-radio" > 
+                <input type="radio" name="q1" onClick="saver(5,3)">
+                <span>Сходить куда-нибудь с друзьями</span>
+              </label>
+            </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(5,0)">
+           <span> Посидеть с друзьями, обсудить всё, что произошло</span>
+          </label>
+        </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(5,2)">
+            <span>Я бы провел(-а) вечер наедине с собой</span>
+          </label>
+        </div>
+    </div>
+    
+    <div class="quiz-column">
+      <div class="quest2">
+        <label class="custom-radio" > 
+          <input type="radio" name="q1" onClick="saver(5,1)">
+         <span>Я бы хотел(-а) сходить на какую-нибудь выставку</span>
+        </label>
+      </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(5,1)">
+          <span>Получить новые знания</span>
+        </label>
+    </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(5,0)">
+        <span>Поиграть в настольные игры</span>
+      </label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="rectangle1">
+      <div class="number">Вопрос №6</div>
+      <div class="inf3">Вы приехали в другую страну, что вы первым делом сделаете?</div>
+      <div class="quiz1">
+        <div class="quiz-column">
+            <div class="quest3">
+              <label class="custom-radio" > 
+                <input type="radio" name="q1" onClick="saver(6,1)">
+               <span> Закажу экскурсию по городу, по историческим местам</span>
+              </label>
+            </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(6,3)">
+            <span>Если я приехал(-а) с друзьями, то первым делом мы будем искать места, куда можно сходить отдохнуть</span>
+          </label>
+        </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(6,2)">
+           <span>Пойду прогуляюсь</span>
+          </label>
+        </div>
+  
+    </div>
+    
+    <div class="quiz-column">
+      <div class="quest2">
+        <label class="custom-radio" > 
+          <input type="radio" name="q1" onClick="saver(6,0)">
+         <span>Я голодный(-ая), поэтому  первым делом пойду поесть</span>
+        </label>
+      </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(6,3)">
+         <span>Опробую водичку в море/бассейне</span>
+        </label>
+    </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(6,0)">
+        <span>Продегустрирую местную кухню </span>
+      </label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="rectangle2">
+      <div class="number">Вопрос №7</div>
+      <div class="inf1">Вам бы хотелось сегодня поактивничать?</div>
+      <div class="quiz">
+        <div class="quiz-column">
+            <div class="quest2">
+              <label class="custom-radio" > 
+                <input type="radio" name="q1" onClick="saver(7,1)">
+               <span> Неет, сегодня точно нет</span>
+              </label>
+            </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(7,3)">
+            <span>С удовольствием!</span>
+          </label>
+        </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1"onClick="saver(7,0)" >
+          <span> Я бы все-таки провел(-а) вечер в компании с друзьями за чашечкой кофе</span>
+          </label>
+        </div>
+    </div>
+    
+    <div class="quiz-column">
+      <div class="quest2">
+        <label class="custom-radio" > 
+          <input type="radio" name="q1" onClick="saver(7,2)">
+        <span> Хочу побыть один(одной)</span>
+        </label>
+      </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(7,3)">
+        <span> Да, узнаем, кто среди друзей быстрее, выше, сильнее!</span>
+        </label>
+    </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(7,1)">
+        <span>Если только мозгами пошевелить!</span>
+      </label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="rectangle2">
+      <div class="number">Вопрос №8</div>
+      <div class="inf1">Опишите вашего идеального спутника</div>
+      <div class="quiz">
+        <div class="quiz-column">
+            <div class="quest2">
+                <label class="custom-radio" > 
+                  <input type="radio" name="q1" onClick="saver(8,3)">
+                  <span>Этот человек должен быть выносливым и бесстрашным</span>
+                </label>
+            </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(8,1)">
+           <span>Мне было бы комфортно с интровертом</span>
+          </label>
+        </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(8,3)">
+           <span>Он должен быть таким же легким на подъем, как и я </span>
+          </label>
+        </div>
+    </div>
+    
+    <div class="quiz-column">
+      <div class="quest2">
+        <label class="custom-radio" > 
+          <input type="radio" name="q1" onClick="saver(8,0)">
+          <span>Только одного? Я планирую выехать большой компанией!</span>
+        </label>
+      </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(8,2)">
+        <span> Обязательно ехать с кем-то? Я предпочитаю быть в одиночеестве </span>
+        </label>
+    </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(8,0)">
+      <span> Если он умеет вкусно готовить, то  с ним – хоть на край света!</span>
+      </label>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="rectangle2">
+      <div class="number">Вопрос №9</div>
+      <div class="inf1">Чего вам не хватает в вашей жизни?</div>
+      <div class="quiz1">
+        <div class="quiz-column">
+            <div class="quest2">
+              <label class="custom-radio" > 
+                <input type="radio" name="q1" onClick="saver(9,2)">
+              <span>  Размаха и масштаба </span>
+              </label>
+            </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(9,1)">
+            <span>Эстетики и красоты</span>
+          </label>
+        </div>
+        <div class="quest2">
+          <label class="custom-radio" > 
+            <input type="radio" name="q1" onClick="saver(9,3)">
+            <span>Решимости и вызова </span>
+          </label>
+        </div>
+    </div>
+    
+    <div class="quiz-column">
+      <div class="quest1">
+        <label class="custom-radio" > 
+          <input type="radio" name="q1" onClick="saver(9,0)">
+         <span>Насыщенности и удовлетворения </span>
+        </label>
+      </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(9,3)">
+          <span>Драйва и ярких красок</span>
+        </label>
+    </div>
+    <div class="quest2">
+      <label class="custom-radio" > 
+        <input type="radio" name="q1" onClick="saver(9,1)">
+       <span>Смысла жизни</span>
+      </label>
+      </div>
+     
+    </div>
+    </div>
+    <div class="get-result">
+      <input class="btn btn-primary" type="button" name="result" value="Узнайте результат" onClick="total()">
+    </div>
+    </div>
+    
+    </div>
+
+   
+    <div class="rectangle1">
+      <div id="result">
+        <!-- <a href="#">«кафе»</a> -->
+        
+
+      </div>
+    </div>
+
+
+
+    <footer>
+        <div class="our_imageee">
+          <img class="imageee" src="images/insta1.png" alt="">
+          <img class="imageee" src="images/pochta2.png" alt="">
+          <img class="imageee" src="images/vk2.png" alt="">
+        </div>
+        <div class="our_image">
+          <a href="https://www.instagram.com/profstud/"><img class="image" src="images/insta.png" alt=""></a>
+          <a href="mailto:profkom_2010@mail.ru"><img class="image" src="images/pochta.png" alt=""></a>
+          <a href="https://vk.com/profsouz_au"><img class="image" src="images/vk.png" alt=""></a>
+        </div>
+    </footer>
+<script src="main.js"></script>
+</body>
+
